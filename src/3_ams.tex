@@ -11,14 +11,12 @@ Their system is divided into two main components:
     \item A spreading activation model to read the game's information \cite{hutMcCormAms}.
     \item The music generation system that uses the spreading activation model output to generate its music \cite{hutMcCormAms}. 
 \end{enumerate}
-
 \begin{figure}[h]
     \centering
     \includegraphics[width=\linewidth]{images/ams_architecture.png}
     \caption{Architecure of AMS \cite{hutMcCormAms}}
     \label{fig:ams_architecture}
 \end{figure}
-
 A first introduction of the system can be seen in \Cref{fig:ams_architecture}.
 It represents the whole workflow of music generation \cite{hutMcCormAms}. The game 
 acts here as an input for the Spreading Activation Model, which passes its output
@@ -27,10 +25,8 @@ MIDI format \cite{hutMcCormAms}. MIDI (Musical Instrument Digital Interface) is 
 common music format \cite{midi_explanation} that can also be used as a protocol
 between computers and synthesizers \cite{midi_explanation}. It can be also used to 
 generate synthesized music \cite{midi_explanation} with many types of instruments \cite{midi_general}.
-
-The MIDI files are then used to generate Music with specific software systems \cite{hutMcCormAms}.
-
-
+The MIDI files are then used to generate Music with specific software systems \cite{hutMcCormAms}. MIDI uses hexadecimal values in order
+to represent the volume, pitch, instrument etc. \cite{midi_general}\cite{midi_explanation}.
 
 \subsection{Spreading Activation Model}
 
@@ -74,10 +70,31 @@ w_A * w_E & \text{if } w_A * w_E > w_B \\
 w_B & \text{if not} 
 \end{cases}
 \] 
-where \( (w_A) \) is the activation value of vertex A, \(( w_B )\)
-is the activation of vertex B and \( (w_E) \) is the normalised value
-of the edge connecting both vertices together.
+where \( w_A \) is the activation value of vertex A, \( w_B \)
+is the activation of vertex \(B\) and \( w_E \) is the normalised value
+of the edge connecting both vertices together \cite{hutMcCormAms}.
 
+Both the activations of nodes and the weights of edges diminish
+over time \cite{hutMcCormAms}. In the tested game scenarios, 
+explicitly defined associations do not fade, while inferred 
+associations decay at a rate of 0.01 per second and node 
+activations decrease at a rate of 0.1 per second
+\cite{hutMcCormAms}.
+Melodic themes have been precomposed for well-known objects and are implemented as properties of object nodes within the system \cite{hutMcCormAms}. The music composition system continuously generates new music based on the knowledge contained in the graph to accompany gameplay \cite{hutMcCormAms}. 
 
 \subsection{Music Composition System}
+
+The authors designed their system to be a multi-agent composition system \cite{hutMcCormAms} and it is based on group dynamics of 
+improvising musicians and different algorithmic composition
+techniques \cite{hutMcCormAms}.
+They also describe the co-agency of the system, where all agents
+of the system work towards the same goal: generating music, like
+real musicians would do \cite{hutMcCormAms}.
+In the AMS of the authors, they implemented three different agents:
+an harmony-agent, a melody-agent and a percussive rhythm-agent \cite{hutMcCormAms}.
+
+\subsubsection{Harmony Agent}
+
+
+
 
