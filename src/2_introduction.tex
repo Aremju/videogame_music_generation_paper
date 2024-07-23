@@ -1,13 +1,8 @@
 \section{Introduction}
-The aim of this paper is to summarise current developments and research on adaptive and generative music in video games. Therefore, different techniques and algorithms are described and their impact on the player is discussed. Furthermore, problems and challenges in the implementation of these systems are described and discussed.
-
-- Beschreibung der Gliederung des Papers
-
-- Diskussion, Ansichten, Meinungen/konkurrierende Ansätze darstellen
-
+The aim of this paper is to summarise current developments and research on adaptive and generative music in video games. Firstly, the two different forms of adaptive and generative music are introduced. This is followed by an explanation of some current systems and techniques for implementing adaptive and generative music. Then the techniques presented are compared and the advantages and disadvantages are discussed. This discussion is particularly focused on the effects and the impact on the player. Finally, technical challenges, problems and limitations are mentioned. 
 
 \subsection{Music in Video Games}
-Music has an important effect in video games \cite{fu2015backgroundmusic}. Most video games use music to emphasize specific emotions and improve the tension and immersion. For this purpose linear music is used by the majority of video games \cite{prechtl2016adaptive}. Linear music is static and does not change in relation to the interaction of the player. But the video game itself is often not linear and reacts dynamically to player interactions. This can cause a conflict between the static audio and dynamic visual response of a video game, as the music may not fit perfectly to every state of the game.  
+Music has an important effect in video games \cite{fu2015backgroundmusic}. Most video games use music to emphasize specific emotions and improve the tension and immersion. For this purpose linear music is used by the majority of video games \cite{prechtl2016adaptive}. Linear music is static and does not change in relation to the interaction of the player. But the video game itself is often not linear and reacts dynamically to player interactions. This can cause a conflict between the static audio and dynamic visual response of a video game, as the music may not fit perfectly to every state of the game \cite{plut2022preglam}.
 
 Due to hardware limitations, older video games such as Super Maio Bros from 1985 \cite{supermariobros1985} mostly use linear music \cite{plut2020generative}. However, advances in hardware have made it possible for current video games to implement customized music. This customized music can be grouped in adaptive and generative music \cite{plut2020generative}. In contrast to linear music, adaptive and generative music react to the player's interactions during the runtime of the video game \cite{plut2020generative}. This allows the music to be better adapted to the current game state.
 
@@ -17,4 +12,9 @@ The composition can be organized using information about the game, such as varia
 Furthermore, the composition of the music can also be changed on different levels such as tempo, pitch, volume \cite{plut2020generative} \cite{amaral2022adaptive}.
 
 \subsection{Generative Music}
-TODO
+Generative music is sometimes also referred to as procedural or algorithmic music \cite{plut2020generative}. As the name suggests, generative music creates new music at runtime \cite{amaral2022adaptive}. The generation can be based on algorithms, rules or specific models \cite{plut2020generative} \cite{amaral2022adaptive}. 
+
+Plut et al. group different types of generative music into two categories: academic and industry applications \cite{plut2022preglam}. They describe how the academic approach usually tries to replace explicitly composed pieces of music with generated music \cite{plut2022preglam}. The creation of the music is usually based on affective models that attempt to depict the various emotions of the player \cite{plut2022preglam}. In contrast, the industry approach to generative music often uses explicitly composed pieces of music that are extended in real time using generative music systems \cite{plut2022preglam}. These generative systems can, for example, use stochastic processes to combine different music fragments in new ways depending on game variables \cite{plut2022preglam}.
+
+\subsection{Discussion}
+The discussion and comparison of the various techniques centres on the effect and impact on the player. Particular attention is paid to whether the systems improve immersion and the gaming experience compared to linear music. Furthermore, it is discussed how reliable these systems are and whether linear music might achieve better results in some cases.
