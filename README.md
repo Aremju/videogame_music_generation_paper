@@ -20,3 +20,16 @@ music systems, explore their functionality, and evaluate
 their performance in terms of gameplay immersion. We also
 discuss the differences between these systems, their advantages
 and disadvantages, and potential future enhancements.
+
+## Quote this paper
+
+```bibtex
+@misc{arendt2024adaptive,
+  title={Adaptive and Generative Music in Videogames},
+  author={Arendt, Julius Emil and Pollpeter, Jonas},
+  year={2024},
+  month={Jul},
+  day={26},
+  note={Homework assignment}
+}
+```
